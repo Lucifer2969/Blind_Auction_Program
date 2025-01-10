@@ -1,8 +1,11 @@
+import art
+import os
 bid_dic = {}
 bid_condition = True
 highest_value = 0
 bid_winner = ''
-
+print(art.logo_auction) 
+print(art.logo_gavel)
 while bid_condition:
     name_key = input("Enter the name of the bidder.\n")
     bid_value = int(input("Enter the bid value in $\n"))
@@ -18,3 +21,4 @@ for key in bid_dic:
         bid_winner = key
 
 print(f"Winner is {bid_winner} with bid amount {highest_value}.")
+os.system("pause")
